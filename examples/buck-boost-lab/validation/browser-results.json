@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "urlProtocol": "file:",
+  "offline": true,
+  "browser": "155.0.8059.84",
+  "checks": [
+    {
+      "name": "file:// page opens while browser is offline",
+      "passed": true
+    },
+    {
+      "name": "Slider, numeric input, keyboard and steady output respond",
+      "passed": true
+    },
+    {
+      "name": "Invalid input preserves valid result and disables export",
+      "passed": true
+    },
+    {
+      "name": "DCM preset, invalid CCM formula warning and three circuit states",
+      "passed": true
+    },
+    {
+      "name": "Zoom and pointer readout",
+      "passed": true
+    },
+    {
+      "name": "Real JSON and two CSV downloads contain SI data",
+      "passed": true
+    },
+    {
+      "name": "JSON file import uses SI values and rejects invalid data",
+      "passed": true
+    },
+    {
+      "name": "Beginner path: missing choice, retry feedback and four-step completion",
+      "passed": true
+    },
+    {
+      "name": "Cycle slider links circuit, current state, and both waveform markers",
+      "passed": true
+    },
+    {
+      "name": "Slow playback pauses, stops after one cycle and respects reduced motion",
+      "passed": true
+    },
+    {
+      "name": "Tab arrow-key navigation and theory content",
+      "passed": true
+    },
+    {
+      "name": "Quiz answers hidden, incomplete submission, 8/8 and changed answers",
+      "passed": true
+    },
+    {
+      "name": "1440, 390 and 320px: all tabs fit without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "No script errors or external resource requests",
+      "passed": true
+    }
+  ],
+  "layouts": [
+    {
+      "tab": "lab",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "tab": "guide",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "tab": "quiz",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "tab": "lab",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "tab": "guide",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "tab": "quiz",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "tab": "lab",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "tab": "guide",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "tab": "quiz",
+      "width": 320,
+      "scroll": 320
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

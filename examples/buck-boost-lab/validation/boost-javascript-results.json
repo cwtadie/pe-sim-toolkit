@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "CCM default near 40V and 3.333A within 1%",
+      "passed": true
+    },
+    {
+      "name": "Sample convergence and actual cycle-periodic state",
+      "passed": true
+    },
+    {
+      "name": "DCM positive diode current and idle interval",
+      "passed": true
+    },
+    {
+      "name": "Input power balances output resistor power",
+      "passed": true
+    },
+    {
+      "name": "Independent RK4 checks both different switch-state equations",
+      "passed": true
+    },
+    {
+      "name": "Genuine positive-duty step: initial dip followed by rise",
+      "passed": true
+    },
+    {
+      "name": "64 parameter corners remain finite, periodic, nonnegative",
+      "passed": true
+    },
+    {
+      "name": "Invalid inputs and inappropriate RHP demonstrations rejected",
+      "passed": true
+    },
+    {
+      "name": "Upper valid step boundary D=0.68 to D=0.70",
+      "passed": true
+    },
+    {
+      "name": "Too-short inverse response is not necessarily resolved by cycle means",
+      "passed": true
+    },
+    {
+      "name": "Transient may enter DCM even when both endpoint states are CCM",
+      "passed": true
+    }
+  ],
+  "default": {
+    "mode": "CCM",
+    "Vmean": 39.99534207286088,
+    "IinMean": 3.332558415798908,
+    "IoutMean": 1.999767103643044,
+    "Vccm": 40,
+    "Iccm": 3.3333333333333335,
+    "deltaV": 0.08508160677053667,
+    "deltaI": 2.1818181818181825,
+    "Ipeak": 4.422887371298751,
+    "Imin": 2.2410691894805685,
+    "Irms": 3.3915715423500123,
+    "Vstress": 40.03091107092563,
+    "zeroFraction": 0,
+    "initialI": 2.2410691894805685,
+    "initialV": 40.03091107092563,
+    "residual": 1.7763568394002505e-15,
+    "Gdc": 66.66666666666667,
+    "f0": 296.968997330264,
+    "fRHP": 5208.707228462029,
+    "Rcrit": 61.11111111111112
+  },
+  "fine": {
+    "mode": "CCM",
+    "Vmean": 39.99534207286088,
+    "IinMean": 3.332558415798908,
+    "IoutMean": 1.999767103643044,
+    "Vccm": 40,
+    "Iccm": 3.3333333333333335,
+    "deltaV": 0.08508160677053667,
+    "deltaI": 2.1818181818181825,
+    "Ipeak": 4.422887371298751,
+    "Imin": 2.2410691894805685,
+    "Irms": 3.3915662165491454,
+    "Vstress": 40.03091107092563,
+    "zeroFraction": 0,
+    "initialI": 2.2410691894805685,
+    "initialV": 40.03091107092563,
+    "residual": 1.7763568394002505e-15,
+    "Gdc": 66.66666666666667,
+    "f0": 296.968997330264,
+    "fRHP": 5208.707228462029,
+    "Rcrit": 61.11111111111112
+  },
+  "DCM": {
+    "mode": "DCM",
+    "Vmean": 111.74093980879474,
+    "IinMean": 2.601257890533469,
+    "IoutMean": 0.5587046990439737,
+    "Vccm": 40,
+    "Iccm": 0.3333333333333333,
+    "deltaV": 0.0531111547131502,
+    "deltaI": 10.21276595744681,
+    "Ipeak": 10.21276595744681,
+    "Imin": 0,
+    "Irms": 4.208894817962517,
+    "Vstress": 111.76650229955075,
+    "zeroFraction": 0.49059799583485847,
+    "initialI": 0,
+    "initialV": 111.73716248023996,
+    "residual": 1.4210854715202004e-14,
+    "Gdc": 66.66666666666667,
+    "f0": 642.5005800572812,
+    "fRHP": 243811.82771524394,
+    "Rcrit": 13.055555555555555
+  },
+  "step": {
+    "oldV": 39.99534207286088,
+    "finalV": 41.37434507809791,
+    "averageInitialSlope": -141.84397163120568,
+    "firstCycleV": 39.99309478469433,
+    "minCycleV": 39.99309478469433,
+    "averageMinV": 39.99786065348929,
+    "lastCycleV": 41.36540860488581,
+    "ccmThroughout": true,
+    "minCurrent": 0.664219555675732,
+    "duration": 0.094
+  },
+  "corners": 64
+}

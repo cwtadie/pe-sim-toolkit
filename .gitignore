@@ -1,0 +1,46 @@
+# Operating System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.bak
+~$*
+
+# MATLAB & Simulink
+slprj/
+sccprj/
+*_ert_rtw/
+*_grt_rtw/
+*.slxc
+*.asv
+*.autosave
+
+# Python & Virtual Environments
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Local data & logs
+*.log
+local_cache/
+
+# Verification dependencies and disposable downloads
+node_modules/
+**/validation/downloads/
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key

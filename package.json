@@ -1,0 +1,15 @@
+{
+  "name": "pe-sim-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline Buck and Boost learning lab with MATLAB models and numerical validation",
+  "license": "MIT",
+  "scripts": {
+    "test": "node examples/buck-boost-lab/validation/verify-model.cjs && node examples/buck-boost-lab/validation/verify-boost.cjs",
+    "test:cross": "node examples/buck-boost-lab/validation/compare-results.cjs && node examples/buck-boost-lab/validation/compare-boost.cjs",
+    "test:browser": "node examples/buck-boost-lab/validation/verify-browser.cjs && node examples/buck-boost-lab/validation/verify-boost-browser.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

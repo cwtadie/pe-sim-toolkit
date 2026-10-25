@@ -1,0 +1,98 @@
+{
+  "matlabVersion": "25.2.0.2998904 (R2025b)",
+  "checks": [
+    {
+      "name": "Default CCM mean voltage/current under 1%",
+      "passed": true
+    },
+    {
+      "name": "DC gain and natural frequency",
+      "passed": true
+    },
+    {
+      "name": "Sampling convergence 128 to 256",
+      "passed": true
+    },
+    {
+      "name": "Independent ode45 default trajectory and integral means",
+      "passed": true
+    },
+    {
+      "name": "DCM independent zero-current event reference",
+      "passed": true
+    },
+    {
+      "name": "64 corners: nonnegative current, periodicity, capacitor charge balance",
+      "passed": true
+    },
+    {
+      "name": "Out-of-range parameter rejected",
+      "passed": true
+    }
+  ],
+  "default": {
+    "mode": "CCM",
+    "Vmean": 9.599999858265063,
+    "Imean": 1.9200000000137143,
+    "deltaI": 1.3097243024509497,
+    "deltaV": 0.01741879957791781,
+    "minI": 1.2651381709278482,
+    "maxI": 2.5748624733787979,
+    "Vccm": 9.6000000000000014,
+    "ILccm": 1.9200000000000004,
+    "Gdc": 24,
+    "f0": 494.9483288837734,
+    "Q": 7.3081523594606939,
+    "zeroFraction": 0,
+    "residual": 8.8817841970012523E-16,
+    "initialI": 1.265138170927848,
+    "initialV": 9.5976476713479357
+  },
+  "fine": {
+    "mode": "CCM",
+    "Vmean": 9.5999999645662655,
+    "Imean": 1.9200000000034261,
+    "deltaI": 1.3097243024509497,
+    "deltaV": 0.01741879957791781,
+    "minI": 1.2651381709278482,
+    "maxI": 2.5748624733787979,
+    "Vccm": 9.6000000000000014,
+    "ILccm": 1.9200000000000004,
+    "Gdc": 24,
+    "f0": 494.9483288837734,
+    "Q": 7.3081523594606939,
+    "zeroFraction": 0,
+    "residual": 8.8817841970012523E-16,
+    "initialI": 1.265138170927848,
+    "initialV": 9.5976476713479357
+  },
+  "DCM": {
+    "mode": "DCM",
+    "Vmean": 22.812297837087065,
+    "Imean": 0.22812295164025026,
+    "deltaI": 1.0821428872824659,
+    "deltaV": 0.015114384431289096,
+    "minI": 0,
+    "maxI": 1.0821428872824659,
+    "Vccm": 9.6000000000000014,
+    "ILccm": 0.096000000000000016,
+    "Gdc": 24,
+    "f0": 1565.1640433668283,
+    "Q": 462.2081388685877,
+    "zeroFraction": 0.57913549287723676,
+    "residual": 3.5527136788005009E-15,
+    "initialI": 0,
+    "initialV": 22.806801618393479
+  },
+  "ode45Default": {
+    "Vmean": 9.5999999999999979,
+    "Imean": 1.9199999999999964,
+    "residual": 3.5527136788005009E-15
+  },
+  "ode45DCM": {
+    "Vmean": 22.812297937163692,
+    "Imean": 0.22812297937165149,
+    "residual": 7.1054273576010019E-15
+  },
+  "boundaryCases": 64
+}

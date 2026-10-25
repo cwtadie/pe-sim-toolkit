@@ -1,0 +1,12 @@
+{
+  "oldV": 39.995342072860893,
+  "finalV": 41.374345078097917,
+  "averageInitialSlope": -141.84397163120568,
+  "firstCycleV": 39.993094784694328,
+  "minCycleV": 39.993094784694328,
+  "averageMinV": 39.99786065348929,
+  "lastCycleV": 41.365408604885808,
+  "ccmThroughout": true,
+  "minCurrent": 0.66421955567574931,
+  "duration": 0.094
+}

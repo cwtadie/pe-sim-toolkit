@@ -1,0 +1,158 @@
+{
+  "passed": true,
+  "comparisons": [
+    {
+      "scenario": "default",
+      "metric": "Vmean",
+      "javascript": 9.599999858265063,
+      "matlab": 9.599999858265063,
+      "relativeError": 0
+    },
+    {
+      "scenario": "default",
+      "metric": "Imean",
+      "javascript": 1.920000000013704,
+      "matlab": 1.9200000000137143,
+      "relativeError": 5.3198186596242095e-15
+    },
+    {
+      "scenario": "default",
+      "metric": "deltaI",
+      "javascript": 1.3097243024509502,
+      "matlab": 1.3097243024509497,
+      "relativeError": 3.3907075635614096e-16
+    },
+    {
+      "scenario": "default",
+      "metric": "deltaV",
+      "javascript": 0.01741879957791781,
+      "matlab": 0.01741879957791781,
+      "relativeError": 0
+    },
+    {
+      "scenario": "default",
+      "metric": "f0",
+      "javascript": 494.9483288837734,
+      "matlab": 494.9483288837734,
+      "relativeError": 0
+    },
+    {
+      "scenario": "default",
+      "metric": "Q",
+      "javascript": 7.308152359460694,
+      "matlab": 7.308152359460694,
+      "relativeError": 0
+    },
+    {
+      "scenario": "default",
+      "metric": "zeroFraction",
+      "javascript": 0,
+      "matlab": 0,
+      "relativeError": 0
+    },
+    {
+      "scenario": "fine",
+      "metric": "Vmean",
+      "javascript": 9.599999964566267,
+      "matlab": 9.599999964566265,
+      "relativeError": 1.8503717145383422e-16
+    },
+    {
+      "scenario": "fine",
+      "metric": "Imean",
+      "javascript": 1.9200000000034156,
+      "matlab": 1.920000000003426,
+      "relativeError": 5.435466891384297e-15
+    },
+    {
+      "scenario": "fine",
+      "metric": "deltaI",
+      "javascript": 1.3097243024509502,
+      "matlab": 1.3097243024509497,
+      "relativeError": 3.3907075635614096e-16
+    },
+    {
+      "scenario": "fine",
+      "metric": "deltaV",
+      "javascript": 0.01741879957791781,
+      "matlab": 0.01741879957791781,
+      "relativeError": 0
+    },
+    {
+      "scenario": "fine",
+      "metric": "f0",
+      "javascript": 494.9483288837734,
+      "matlab": 494.9483288837734,
+      "relativeError": 0
+    },
+    {
+      "scenario": "fine",
+      "metric": "Q",
+      "javascript": 7.308152359460694,
+      "matlab": 7.308152359460694,
+      "relativeError": 0
+    },
+    {
+      "scenario": "fine",
+      "metric": "zeroFraction",
+      "javascript": 0,
+      "matlab": 0,
+      "relativeError": 0
+    },
+    {
+      "scenario": "DCM",
+      "metric": "Vmean",
+      "javascript": 22.812297837087243,
+      "matlab": 22.812297837087065,
+      "relativeError": 7.786838713425618e-15
+    },
+    {
+      "scenario": "DCM",
+      "metric": "Imean",
+      "javascript": 0.22812295164021312,
+      "matlab": 0.22812295164025026,
+      "relativeError": 1.6279361592811777e-13
+    },
+    {
+      "scenario": "DCM",
+      "metric": "deltaI",
+      "javascript": 1.0821428872822991,
+      "matlab": 1.0821428872824659,
+      "relativeError": 1.540974858851253e-13
+    },
+    {
+      "scenario": "DCM",
+      "metric": "deltaV",
+      "javascript": 0.01511438443128199,
+      "matlab": 0.015114384431289096,
+      "relativeError": 4.701102707756775e-13
+    },
+    {
+      "scenario": "DCM",
+      "metric": "f0",
+      "javascript": 1565.1640433668283,
+      "matlab": 1565.1640433668283,
+      "relativeError": 0
+    },
+    {
+      "scenario": "DCM",
+      "metric": "Q",
+      "javascript": 462.2081388685877,
+      "matlab": 462.2081388685877,
+      "relativeError": 0
+    },
+    {
+      "scenario": "DCM",
+      "metric": "zeroFraction",
+      "javascript": 0.5791354928772389,
+      "matlab": 0.5791354928772368,
+      "relativeError": 3.642366549333467e-15
+    }
+  ],
+  "rowsCompared": 257,
+  "maxVoltageError_V": 8.881784197001252e-15,
+  "maxCurrentError_A": 1.509903313490213e-14,
+  "frequencyRowsCompared": 180,
+  "maxGainError_dB": 7.105427357601002e-14,
+  "maxPhaseError_deg": 4.831690603168681e-13
+}

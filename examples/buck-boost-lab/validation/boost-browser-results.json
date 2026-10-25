@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "offline": true,
+  "protocol": "file:",
+  "browser": "155.0.8059.84",
+  "checks": [
+    {
+      "name": "Offline file loading, steady defaults and full phase display",
+      "passed": true
+    },
+    {
+      "name": "Numerical inputs, invalid protection and keyboard sliders",
+      "passed": true
+    },
+    {
+      "name": "CCM/DCM, diode gating, circuit marker and idle state",
+      "passed": true
+    },
+    {
+      "name": "Four guided tasks, wrong retry and verified one-parameter experiment",
+      "passed": true
+    },
+    {
+      "name": "Real duty step requires prediction, shows inverse response and survives export",
+      "passed": true
+    },
+    {
+      "name": "All four actual downloads and cross-model SI parameter import",
+      "passed": true
+    },
+    {
+      "name": "Parameter edits invalidate step response and old CSV",
+      "passed": true
+    },
+    {
+      "name": "Unresolved fast inverse response and transient DCM get honest caveats",
+      "passed": true
+    },
+    {
+      "name": "Playback stops after one cycle and reduced motion disables playback",
+      "passed": true
+    },
+    {
+      "name": "Keyboard tab navigation, explanation, hidden answers and 6/6 grading",
+      "passed": true
+    },
+    {
+      "name": "All panels fit 1440, 390 and 320px; step redraws on small screens",
+      "passed": true
+    },
+    {
+      "name": "Buck navigation remains functional and no external resources/errors",
+      "passed": true
+    }
+  ],
+  "layouts": [
+    {
+      "tab": "lab",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "tab": "guide",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "tab": "quiz",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "tab": "lab",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "tab": "guide",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "tab": "quiz",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "tab": "lab",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "tab": "guide",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "tab": "quiz",
+      "width": 320,
+      "scroll": 320
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

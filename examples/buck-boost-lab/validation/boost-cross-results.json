@@ -1,0 +1,418 @@
+{
+  "passed": true,
+  "metrics": [
+    {
+      "scenario": "default",
+      "key": "Vmean",
+      "absoluteDifference": 1.4210854715202004e-14,
+      "relativeDifference": 3.553127434018091e-16
+    },
+    {
+      "scenario": "default",
+      "key": "IinMean",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 1.3325774208330026e-16
+    },
+    {
+      "scenario": "default",
+      "key": "IoutMean",
+      "absoluteDifference": 6.661338147750939e-16,
+      "relativeDifference": 3.3310569693919606e-16
+    },
+    {
+      "scenario": "default",
+      "key": "Vccm",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "default",
+      "key": "Iccm",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "default",
+      "key": "deltaV",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "default",
+      "key": "deltaI",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 2.0354088784794533e-16
+    },
+    {
+      "scenario": "default",
+      "key": "Ipeak",
+      "absoluteDifference": 8.881784197001252e-16,
+      "relativeDifference": 2.0081416168626465e-16
+    },
+    {
+      "scenario": "default",
+      "key": "Imin",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 1.9815952668243724e-16
+    },
+    {
+      "scenario": "default",
+      "key": "Irms",
+      "absoluteDifference": 1.3322676295501878e-15,
+      "relativeDifference": 3.9281719784305747e-16
+    },
+    {
+      "scenario": "default",
+      "key": "Vstress",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "default",
+      "key": "zeroFraction",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "default",
+      "key": "initialI",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 1.9815952668243724e-16
+    },
+    {
+      "scenario": "default",
+      "key": "initialV",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "default",
+      "key": "residual",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 4.4408920985006256e-7
+    },
+    {
+      "scenario": "default",
+      "key": "Gdc",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "default",
+      "key": "f0",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "default",
+      "key": "fRHP",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "default",
+      "key": "Rcrit",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "Vmean",
+      "absoluteDifference": 1.4210854715202004e-14,
+      "relativeDifference": 3.553127434018091e-16
+    },
+    {
+      "scenario": "fine",
+      "key": "IinMean",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 1.3325774208330026e-16
+    },
+    {
+      "scenario": "fine",
+      "key": "IoutMean",
+      "absoluteDifference": 6.661338147750939e-16,
+      "relativeDifference": 3.3310569693919606e-16
+    },
+    {
+      "scenario": "fine",
+      "key": "Vccm",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "Iccm",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "deltaV",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "deltaI",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 2.0354088784794533e-16
+    },
+    {
+      "scenario": "fine",
+      "key": "Ipeak",
+      "absoluteDifference": 8.881784197001252e-16,
+      "relativeDifference": 2.0081416168626465e-16
+    },
+    {
+      "scenario": "fine",
+      "key": "Imin",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 1.9815952668243724e-16
+    },
+    {
+      "scenario": "fine",
+      "key": "Irms",
+      "absoluteDifference": 1.7763568394002505e-15,
+      "relativeDifference": 5.237570862489782e-16
+    },
+    {
+      "scenario": "fine",
+      "key": "Vstress",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "zeroFraction",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "initialI",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 1.9815952668243724e-16
+    },
+    {
+      "scenario": "fine",
+      "key": "initialV",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "residual",
+      "absoluteDifference": 4.440892098500626e-16,
+      "relativeDifference": 4.4408920985006256e-7
+    },
+    {
+      "scenario": "fine",
+      "key": "Gdc",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "f0",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "fRHP",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "fine",
+      "key": "Rcrit",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "Vmean",
+      "absoluteDifference": 7.105427357601002e-14,
+      "relativeDifference": 6.358839803709762e-16
+    },
+    {
+      "scenario": "DCM",
+      "key": "IinMean",
+      "absoluteDifference": 1.3367085216486885e-13,
+      "relativeDifference": 5.1387004976066533e-14
+    },
+    {
+      "scenario": "DCM",
+      "key": "IoutMean",
+      "absoluteDifference": 3.3306690738754696e-16,
+      "relativeDifference": 5.961412315977902e-16
+    },
+    {
+      "scenario": "DCM",
+      "key": "Vccm",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "Iccm",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "deltaV",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "deltaI",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "Ipeak",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "Imin",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "Irms",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "Vstress",
+      "absoluteDifference": 2.842170943040401e-14,
+      "relativeDifference": 2.542954180871619e-16
+    },
+    {
+      "scenario": "DCM",
+      "key": "zeroFraction",
+      "absoluteDifference": 2.1649348980190553e-15,
+      "relativeDifference": 4.412849046264327e-15
+    },
+    {
+      "scenario": "DCM",
+      "key": "initialI",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "initialV",
+      "absoluteDifference": 2.842170943040401e-14,
+      "relativeDifference": 2.5436219069398875e-16
+    },
+    {
+      "scenario": "DCM",
+      "key": "residual",
+      "absoluteDifference": 1.4210854715202004e-14,
+      "relativeDifference": 0.000014210854715202002
+    },
+    {
+      "scenario": "DCM",
+      "key": "Gdc",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "f0",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "fRHP",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "DCM",
+      "key": "Rcrit",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "step",
+      "key": "oldV",
+      "absoluteDifference": 1.4210854715202004e-14,
+      "relativeDifference": 3.553127434018091e-16
+    },
+    {
+      "scenario": "step",
+      "key": "finalV",
+      "absoluteDifference": 7.105427357601002e-15,
+      "relativeDifference": 1.7173510164786533e-16
+    },
+    {
+      "scenario": "step",
+      "key": "averageInitialSlope",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "step",
+      "key": "firstCycleV",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "step",
+      "key": "minCycleV",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "step",
+      "key": "averageMinV",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "step",
+      "key": "lastCycleV",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    },
+    {
+      "scenario": "step",
+      "key": "minCurrent",
+      "absoluteDifference": 1.7319479184152442e-14,
+      "relativeDifference": 2.6074931152143398e-14
+    },
+    {
+      "scenario": "step",
+      "key": "duration",
+      "absoluteDifference": 0,
+      "relativeDifference": 0
+    }
+  ],
+  "datasets": [
+    {
+      "file": "waveforms.csv",
+      "rows": 257,
+      "maxAbsoluteDifference": 4.973799150320701e-14
+    },
+    {
+      "file": "frequency.csv",
+      "rows": 240,
+      "maxAbsoluteDifference": 7.639755494892597e-11
+    },
+    {
+      "file": "step.csv",
+      "rows": 1890,
+      "maxAbsoluteDifference": 1.4210854715202004e-12
+    }
+  ]
+}

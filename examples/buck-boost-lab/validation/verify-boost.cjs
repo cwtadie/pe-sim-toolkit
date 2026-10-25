@@ -1,0 +1,18 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),M=require('../boost-model.js');
+const p={...M.defaults},r=M.simulate(p),fine=M.simulate(p,256),dcm=M.simulate({...p,L:47e-6,R:200}),step=M.step(p),checks=[];
+function check(name,fn){fn();checks.push({name,passed:true});}
+check('CCM default near 40V and 3.333A within 1%',()=>{assert.equal(r.metrics.mode,'CCM');assert.ok(Math.abs(r.metrics.Vmean/40-1)<.01);assert.ok(Math.abs(r.metrics.IinMean/(10/3)-1)<.01);});
+check('Sample convergence and actual cycle-periodic state',()=>{assert.ok(Math.abs(r.metrics.Irms/fine.metrics.Irms-1)<1e-4);assert.ok(r.metrics.residual<1e-9);});
+check('DCM positive diode current and idle interval',()=>{assert.equal(dcm.metrics.mode,'DCM');assert.ok(dcm.metrics.zeroFraction>0);assert.ok(dcm.rows.every(v=>v.iL_A>=-1e-9&&v.iD_A>=-1e-9));assert.ok(dcm.metrics.Vmean>dcm.metrics.Vccm);});
+check('Input power balances output resistor power',()=>{let outputPower=0;for(let j=1;j<r.rows.length;j++){const a=r.rows[j-1],b=r.rows[j];outputPower+=(a.v_V*a.v_V+b.v_V*b.v_V)*(b.t_s-a.t_s)/2*p.fs/p.R;}assert.ok(Math.abs(outputPower/(p.Vg*r.metrics.IinMean)-1)<1e-4);});
+// Independent RK4 integrator for the default continuous diode-current orbit.
+check('Independent RK4 checks both different switch-state equations',()=>{let x=[r.metrics.initialI,r.metrics.initialV];for(const on of [true,false]){const h=(on?p.D:1-p.D)/p.fs/2000,f=y=>[on?p.Vg/p.L:(p.Vg-y[1])/p.L,on?-y[1]/(p.R*p.C):(y[0]-y[1]/p.R)/p.C];for(let j=0;j<2000;j++){const a=f(x),b=f(x.map((v,k)=>v+h*a[k]/2)),c=f(x.map((v,k)=>v+h*b[k]/2)),d=f(x.map((v,k)=>v+h*c[k]));x=x.map((v,k)=>v+h*(a[k]+2*b[k]+2*c[k]+d[k])/6);}}assert.ok(Math.abs(x[0]-r.metrics.initialI)<1e-8&&Math.abs(x[1]-r.metrics.initialV)<1e-8);});
+check('Genuine positive-duty step: initial dip followed by rise',()=>{assert.ok(step.metrics.ccmThroughout);assert.ok(step.metrics.averageInitialSlope<0);assert.ok(step.metrics.firstCycleV<step.metrics.oldV);assert.ok(step.metrics.minCycleV<step.metrics.oldV);assert.ok(step.metrics.lastCycleV>step.metrics.oldV);assert.ok(Math.abs(step.metrics.lastCycleV/step.metrics.finalV-1)<.01);});
+let corners=0;check('64 parameter corners remain finite, periodic, nonnegative',()=>{for(let mask=0;mask<64;mask++){const q={};Object.keys(p).forEach((k,j)=>q[k]=M.limits[k][mask>>j&1]);const v=M.simulate(q,64);assert.ok(v.metrics.residual<1e-7);assert.ok(v.rows.every(x=>x.iL_A>=-1e-9&&x.v_V>=0));corners++;}});
+check('Invalid inputs and inappropriate RHP demonstrations rejected',()=>{assert.throws(()=>M.simulate({...p,D:1}));assert.throws(()=>M.simulate({...p,Vg:NaN}));assert.throws(()=>M.step({...p,D:.7}));assert.throws(()=>M.step({...p,L:47e-6,R:200}));});
+check('Upper valid step boundary D=0.68 to D=0.70',()=>{const top=M.step({...p,D:.68});assert.ok(Math.abs(top.rows[top.rows.length-1].D-.7)<1e-12);});
+check('Too-short inverse response is not necessarily resolved by cycle means',()=>{const fast=M.step({...p,D:.1,L:47e-6,R:5});assert.ok(fast.metrics.averageInitialSlope<0&&fast.metrics.firstCycleV>fast.metrics.oldV);});
+check('Transient may enter DCM even when both endpoint states are CCM',()=>{const crossing=M.step({...p,D:.1,L:2200e-6,R:200});assert.equal(crossing.metrics.ccmThroughout,false);assert.equal(crossing.metrics.minCurrent,0);});
+const report={passed:true,checks,default:r.metrics,fine:fine.metrics,DCM:dcm.metrics,step:step.metrics,corners};
+fs.writeFileSync(path.join(__dirname,'boost-javascript-results.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-10-25T10:38:33.031Z",
+  "checks": [
+    {
+      "name": "Shared parameter file has valid SI inputs",
+      "passed": true
+    },
+    {
+      "name": "CCM default mean voltage/current under 1%",
+      "passed": true
+    },
+    {
+      "name": "DC gain and natural frequency",
+      "passed": true
+    },
+    {
+      "name": "Sampling convergence (128 to 256 per interval)",
+      "passed": true
+    },
+    {
+      "name": "Independent RK4 trajectory matches default",
+      "passed": true
+    },
+    {
+      "name": "DCM zero-current interval and periodic residual",
+      "passed": true
+    },
+    {
+      "name": "Invalid/nonfinite/out-of-range input rejected",
+      "passed": true
+    },
+    {
+      "name": "64 boundary corners, no negative diode current or periodic drift",
+      "passed": true
+    },
+    {
+      "name": "CSV SI header and Bode frequency monotonicity",
+      "passed": true
+    }
+  ],
+  "default": {
+    "mode": "CCM",
+    "Vmean": 9.599999858265063,
+    "Imean": 1.920000000013704,
+    "deltaI": 1.3097243024509502,
+    "deltaV": 0.01741879957791781,
+    "minI": 1.2651381709278375,
+    "maxI": 2.5748624733787877,
+    "Vccm": 9.600000000000001,
+    "ILccm": 1.9200000000000004,
+    "Gdc": 24,
+    "f0": 494.9483288837734,
+    "Q": 7.308152359460694,
+    "zeroFraction": 0,
+    "residual": 1.7763568394002505e-15,
+    "initialI": 1.2651381709278373,
+    "initialV": 9.597647671347934
+  },
+  "fine": {
+    "mode": "CCM",
+    "Vmean": 9.599999964566267,
+    "Imean": 1.9200000000034156,
+    "deltaI": 1.3097243024509502,
+    "deltaV": 0.01741879957791781,
+    "minI": 1.2651381709278375,
+    "maxI": 2.5748624733787877,
+    "Vccm": 9.600000000000001,
+    "ILccm": 1.9200000000000004,
+    "Gdc": 24,
+    "f0": 494.9483288837734,
+    "Q": 7.308152359460694,
+    "zeroFraction": 0,
+    "residual": 1.7763568394002505e-15,
+    "initialI": 1.2651381709278373,
+    "initialV": 9.597647671347934
+  },
+  "DCM": {
+    "mode": "DCM",
+    "Vmean": 22.812297837087243,
+    "Imean": 0.22812295164021312,
+    "deltaI": 1.0821428872822991,
+    "deltaV": 0.01511438443128199,
+    "minI": 0,
+    "maxI": 1.0821428872822991,
+    "Vccm": 9.600000000000001,
+    "ILccm": 0.09600000000000002,
+    "Gdc": 24,
+    "f0": 1565.1640433668283,
+    "Q": 462.2081388685877,
+    "zeroFraction": 0.5791354928772389,
+    "residual": 0,
+    "initialI": 0,
+    "initialV": 22.806801618393663
+  },
+  "boundaryCases": 64
+}
