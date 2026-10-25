@@ -6,6 +6,15 @@
 
 ## 立即使用
 
+### 在线打开
+
+- [Buck 降压实验台](https://cwtadie.github.io/pe-sim-toolkit/)
+- [Boost 升压实验台](https://cwtadie.github.io/pe-sim-toolkit/boost.html)
+
+在线版本由 GitHub Pages 托管，无需安装软件。模型在浏览器本地计算，没有项目自建后端，也不会把你载入的参数文件上传到服务器。首次打开网站需要网络；需要可靠的断网使用时，请下载完整项目。
+
+### 下载后离线使用
+
 1. 在 GitHub 点击 **Code → Download ZIP**，解压全部文件。
 2. 用 Chrome 或 Edge 打开 `examples/buck-boost-lab/index.html`，从 Buck 四步引导开始。
 3. 点击“下一站：Boost”，或打开同目录的 `boost.html`。
@@ -17,6 +26,7 @@
 - [方程推导与学习说明](examples/buck-boost-lab/学习说明.md)
 - [原始验证报告](examples/buck-boost-lab/验证报告.md)
 - [公开版本的验证范围](docs/发布说明.md)
+- [在线演示与部署说明](docs/在线演示.md)
 
 ## 已有功能
 
